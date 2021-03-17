@@ -1,9 +1,10 @@
-# Cookiecutter Data Science
+# Cookiecutter Project Template
+
+Adapted from the [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/) template.
+
 
 _A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
 
-
-#### [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
 
 
 ### Requirements to use the cookiecutter template:
@@ -26,10 +27,8 @@ $ conda install cookiecutter
 ### To start a new project, run:
 ------------
 
-    cookiecutter https://github.com/drivendata/cookiecutter-data-science
+    cookiecutter https://github.com/wiesehahn/cookiecutter-data-science
 
-
-[![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
 
 
 ### The resulting directory structure
@@ -38,62 +37,36 @@ $ conda install cookiecutter
 The directory structure of your new project looks like this: 
 
 ```
-├── LICENSE
-├── Makefile           <- Makefile with commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-├── src                <- Source code for use in this project.
-│   ├── __init__.py    <- Makes src a Python module
-│   │
-│   ├── data           <- Scripts to download or generate data
-│   │   └── make_dataset.py
-│   │
-│   ├── features       <- Scripts to turn raw data into features for modeling
-│   │   └── build_features.py
-│   │
-│   ├── models         <- Scripts to train models and then use trained models to make
-│   │   │                 predictions
-│   │   ├── predict_model.py
-│   │   └── train_model.py
-│   │
-│   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-│       └── visualize.py
-│
-└── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+
+    ├── README.md          <- The top-level README with project information.
+    |
+    ├── code               <- Source code for use in this project.
+    │   ├── analysis       <- e.g. Code to generate reports 
+    │   ├── data           <- Scripts to download, generate or process data.
+    │   ├── exploratory    <- Exploratory code and scipts in progress.
+    │   ├── functions      <- Reusable code such as functions.
+    │   └── viz            <- Scripts to create exploratory and results oriented visualizations.
+    |
+    ├── data
+    │   ├── external       <- Data from third party sources.
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   └── processed      <- The final data sets for modeling or analysis.
+    │
+    ├── docs               <- `index.md` or `index.html` to render at your GitHub Pages URL is stored here.
+    │
+    ├── resources          <- Figures, literature, manuals, and all other explanatory materials.
+    │   ├── documents      <- External documents such as project outlines. 
+    │   └── figures        <- External figures used in reports such as logos.
+    │
+    ├── results            <- Results as part of this project.
+    │   ├── figures        <- Generated graphics and figures to be used in reporting 
+    │   └── reports        <- Generated analysis as HTML, PDF, LaTeX, etc.
+    │
+    ├── templates          <- Template scripts, documents etc.
+    |
+    ├── LICENSE            <- License file for the project (optional)
+    |
+    └── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+                              generated with `pip freeze > requirements.txt` (optional)
+
 ```
-
-## Contributing
-
-We welcome contributions! [See the docs for guidelines](https://drivendata.github.io/cookiecutter-data-science/#contributing).
-
-### Installing development requirements
-------------
-
-    pip install -r requirements.txt
-
-### Running the tests
-------------
-
-    py.test tests
