@@ -24,8 +24,9 @@ $ conda install cookiecutter
 ```
 
 
-### To start a new project, run:
+### To start a new project:
 ------------
+cd to path where the project should be created locally and run:
 
     cookiecutter https://github.com/wiesehahn/cookiecutter-data-science
 
